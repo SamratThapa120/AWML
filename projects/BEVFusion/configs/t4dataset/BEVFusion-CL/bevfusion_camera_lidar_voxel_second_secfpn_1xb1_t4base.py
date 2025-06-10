@@ -1,6 +1,6 @@
 _base_ = [
     "../default/bevfusion_lidar_voxel_second_secfpn_1xb1_t4base.py",
-    "../../../../../autoware_ml/configs/detection3d/dataset/t4dataset/xx1.py",
+    "../../../../../autoware_ml/configs/detection3d/dataset/t4dataset/base.py",
 ]
 
 custom_imports = dict(imports=["projects.BEVFusion.bevfusion"], allow_failed_imports=False)
@@ -8,7 +8,7 @@ custom_imports["imports"] += _base_.custom_imports["imports"]
 
 # user setting
 data_root = "data/"
-info_directory_path = "info/samrat/jpn_taxi/"
+info_directory_path = "info/samrat/base_model1.0.0/"
 train_gpu_size = 2
 train_batch_size = 8
 val_interval = 5
